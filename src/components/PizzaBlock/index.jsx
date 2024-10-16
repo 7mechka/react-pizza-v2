@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addPizza } from '../../redux/slices/cartSlice';
 
 function PizzaBlock({ title, price, sizes, imageUrl, types }) {
@@ -7,7 +7,6 @@ function PizzaBlock({ title, price, sizes, imageUrl, types }) {
   const [sizeActive, setSizeActive] = useState(0);
   const [typesActive, setTypesActive] = useState(0);
 
-  const globalPizzaList = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
   const typesNames = ['тонке', 'традиційне'];

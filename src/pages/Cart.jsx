@@ -14,7 +14,7 @@ function Cart() {
 
   const allPizzasPrice = () => {
     let tmpPrice = 0;
-    globalPizzaList.map((e, i) => {
+    globalPizzaList.forEach((e, i) => {
       tmpPrice += e.price;
     });
     return tmpPrice;

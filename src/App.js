@@ -2,7 +2,7 @@ import './scss/app.scss';
 import Header from './components/Header';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import Cart from './pages/Cart';
 
 function App() {
@@ -18,6 +18,10 @@ function App() {
           <Route
             path='/cart'
             element={<Cart />}
+          />
+          <Route
+            path='/react-pizza-v2'
+            element={<Navigate to='/' />}
           />
           <Route
             path='*'
