@@ -1,1 +1,1 @@
-# React Pizza v2 by Maksym Stognij / 7mechka
+# React Pizza v2 by Maksym Stognij / 7mechka 
